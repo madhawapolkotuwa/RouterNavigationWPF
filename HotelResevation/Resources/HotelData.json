@@ -1,0 +1,348 @@
+{
+  "value": [
+    {
+      "HotelId": 1,
+      "Image": "../Resources/Hotels/Hotel1.jpg",
+      "HotelName": "Stay-Kay City Hotel",
+      "Description": "This classic hotel is fully-refurbished and ideally located on the main commercial artery of the city in the heart of New York.",
+      "Category": "Boutique",
+      "Tags": ["view", "air conditioning", "concierge"],
+      "ParkingIncluded": false,
+      "Rating": 3.60,
+      "Address": {
+        "StreetAddress": "677 5th Ave",
+        "City": "New York",
+        "StateProvince": "NY",
+        "PostalCode": "10022",
+        "Country": "USA"
+      },
+      "Rooms": [
+        {
+          "RoomId": 1,
+          "Description": "Budget Room, 1 Queen Bed (Cityside)",
+          "Image": "../Resources/Rooms/Room1.jpg",
+          "Type": "Budget Room",
+          "BaseRate": 96.99,
+          "BedOptions": "1 Queen Bed",
+          "SleepsCount": 2,
+          "SmokingAllowed": true,
+          "Tags": [ "vcr/dvd" ]
+        },
+        {
+          "RoomId": 2,
+          "Description": "Budget Room, 1 King Bed (Mountain View)",
+          "Image": "../Resources/Rooms/Room2.jpg",
+          "Type": "Budget Room",
+          "BaseRate": 80.99,
+          "BedOptions": "1 King Bed",
+          "SleepsCount": 2,
+          "SmokingAllowed": true,
+          "Tags": [ "vcr/dvd", "jacuzzi tub" ]
+        },
+        {
+          "RoomId": 3,
+          "Description": "Suite, 1 Queen Bed (Mountain View)",
+          "Image": "../Resources/Rooms/Room12.jpg",
+          "Type": "Suite",
+          "BaseRate": 243.99,
+          "BedOptions": "1 Queen Bed",
+          "SleepsCount": 2,
+          "SmokingAllowed": false,
+          "Tags": [ "vcr/dvd", "jacuzzi tub" ]
+        },
+        {
+          "RoomId": 4,
+          "Description": "Suite, 1 King Bed (Waterfront View)",
+          "Image": "../Resources/Rooms/Room13.jpg",
+          "Type": "Suite",
+          "BaseRate": 262.99,
+          "BedOptions": "1 King Bed",
+          "SleepsCount": 2,
+          "SmokingAllowed": true,
+          "Tags": [ "vcr/dvd", "jacuzzi tub", "smoking" ]
+        }
+      ]
+    },
+    {
+      "HotelId": 2,
+      "Image": "../Resources/Hotels/Hotel2.jpg",
+      "HotelName": "Ocean Breeze Resort",
+      "Description": "A relaxing beachside hotel offering breathtaking views of the Pacific Ocean.",
+      "Category": "Resort",
+      "Tags": ["beach", "ocean view", "spa"],
+      "ParkingIncluded": true,
+      "Rating": 4.50,
+      "Address": {
+        "StreetAddress": "1123 Ocean Dr",
+        "City": "Miami Beach",
+        "StateProvince": "FL",
+        "PostalCode": "33139",
+        "Country": "USA"
+      },
+      "Rooms": [
+        {
+          "RoomId": 1,
+          "Description": "Deluxe Suite, 1 King Bed, Ocean View",
+          "Image": "../Resources/Rooms/Room3.jpg",
+          "Type": "Deluxe Suite",
+          "BaseRate": 220.99,
+          "BedOptions": "1 King Bed",
+          "SleepsCount": 3,
+          "SmokingAllowed": false,
+          "Tags": [ "balcony", "minibar" ]
+        },
+        {
+          "RoomId": 2,
+          "Description": "Budget Room, 1 Queen Bed (Amenities)",
+          "Image": "../Resources/Rooms/Room14.jpg",
+          "Type": "Budget Room",
+          "BaseRate": 76.99,
+          "BedOptions": "1 Queen Bed",
+          "SleepsCount": 2,
+          "SmokingAllowed": false,
+          "Tags": [ "coffee maker" ]
+        }
+      ]
+    },
+    {
+      "HotelId": 3,
+      "Image": "../Resources/Hotels/Hotel3.jpg",
+      "HotelName": "Mountain Peak Lodge",
+      "Description": "Located at the base of the scenic Rocky Mountains, this lodge is perfect for nature lovers and adventure seekers.",
+      "Category": "Lodge",
+      "Tags": ["hiking", "mountain view", "fireplace"],
+      "ParkingIncluded": true,
+      "Rating": 4.20,
+      "Address": {
+        "StreetAddress": "202 Mountain Way",
+        "City": "Aspen",
+        "StateProvince": "CO",
+        "PostalCode": "81611",
+        "Country": "USA"
+      },
+      "Rooms": [
+        {
+          "RoomId": 1,
+          "Description": "Standard Room, 2 Double Beds",
+          "Image": "../Resources/Rooms/Room4.jpg",
+          "Type": "Standard Room",
+          "BaseRate": 150.99,
+          "BedOptions": "2 Double Beds",
+          "SleepsCount": 4,
+          "SmokingAllowed": false,
+          "Tags": [ "fireplace" ]
+        }
+      ]
+    },
+    {
+      "HotelId": 4,
+      "Image": "../Resources/Hotels/Hotel4.jpg",
+      "HotelName": "Urban Retreat Hotel",
+      "Description": "A modern hotel located in the heart of the bustling city, offering a perfect mix of comfort and style.",
+      "Category": "Luxury",
+      "Tags": ["gym", "city view", "pool"],
+      "ParkingIncluded": false,
+      "Rating": 4.80,
+      "Address": {
+        "StreetAddress": "789 Downtown Ave",
+        "City": "Chicago",
+        "StateProvince": "IL",
+        "PostalCode": "60611",
+        "Country": "USA"
+      },
+      "Rooms": [
+        {
+          "RoomId": 1,
+          "Description": "Executive Suite, 1 King Bed, City View",
+          "Image": "../Resources/Rooms/Room5.jpg",
+          "Type": "Executive Suite",
+          "BaseRate": 350.99,
+          "BedOptions": "1 King Bed",
+          "SleepsCount": 2,
+          "SmokingAllowed": false,
+          "Tags": [ "jacuzzi", "mini-bar" ]
+        }
+      ]
+    },
+    {
+      "HotelId": 5,
+      "Image": "../Resources/Hotels/Hotel5.jpg",
+      "HotelName": "The Grand Palace",
+      "Description": "A luxurious 5-star hotel offering unparalleled elegance and world-class services.",
+      "Category": "Luxury",
+      "Tags": ["spa", "gourmet dining", "valet parking"],
+      "ParkingIncluded": true,
+      "Rating": 5.00,
+      "Address": {
+        "StreetAddress": "1 Palace Rd",
+        "City": "Los Angeles",
+        "StateProvince": "CA",
+        "PostalCode": "90015",
+        "Country": "USA"
+      },
+      "Rooms": [
+        {
+          "RoomId": 1,
+          "Description": "Royal Suite, 1 King Bed",
+          "Image": "../Resources/Rooms/Room6.jpg",
+          "Type": "Royal Suite",
+          "BaseRate": 999.99,
+          "BedOptions": "1 King Bed",
+          "SleepsCount": 2,
+          "SmokingAllowed": false,
+          "Tags": [ "butler service", "private pool" ]
+        }
+      ]
+    },
+    {
+      "HotelId": 6,
+      "Image": "../Resources/Hotels/Hotel6.jpg",
+      "HotelName": "Country Comfort Inn",
+      "Description": "A cozy countryside inn offering comfort and tranquility, perfect for weekend getaways.",
+      "Category": "Inn",
+      "Tags": ["countryside", "fireplace", "wifi"],
+      "ParkingIncluded": true,
+      "Rating": 3.90,
+      "Address": {
+        "StreetAddress": "543 Country Rd",
+        "City": "Nashville",
+        "StateProvince": "TN",
+        "PostalCode": "37214",
+        "Country": "USA"
+      },
+      "Rooms": [
+        {
+          "RoomId": 1,
+          "Description": "Standard Room, 1 Queen Bed",
+          "Image": "../Resources/Rooms/Room7.jpg",
+          "Type": "Standard Room",
+          "BaseRate": 99.99,
+          "BedOptions": "1 Queen Bed",
+          "SleepsCount": 2,
+          "SmokingAllowed": true,
+          "Tags": [ "wifi", "continental breakfast" ]
+        }
+      ]
+    },
+    {
+      "HotelId": 7,
+      "Image": "../Resources/Hotels/Hotel7.jpg",
+      "HotelName": "Sunset Valley Resort",
+      "Description": "A serene resort nestled in the valley, offering amazing sunset views and relaxation.",
+      "Category": "Resort",
+      "Tags": ["pool", "spa", "sunset view"],
+      "ParkingIncluded": true,
+      "Rating": 4.70,
+      "Address": {
+        "StreetAddress": "321 Valley View Rd",
+        "City": "Sedona",
+        "StateProvince": "AZ",
+        "PostalCode": "86336",
+        "Country": "USA"
+      },
+      "Rooms": [
+        {
+          "RoomId": 1,
+          "Description": "Luxury Villa, 2 King Beds, Pool View",
+          "Image": "../Resources/Rooms/Room8.jpg",
+          "Type": "Luxury Villa",
+          "BaseRate": 500.99,
+          "BedOptions": "2 King Beds",
+          "SleepsCount": 4,
+          "SmokingAllowed": false,
+          "Tags": [ "private pool", "jacuzzi" ]
+        }
+      ]
+    },
+    {
+      "HotelId": 8,
+      "Image": "../Resources/Hotels/Hotel8.jpg",
+      "HotelName": "Coastal Breeze Inn",
+      "Description": "A charming inn located along the coast, offering a peaceful stay and easy beach access.",
+      "Category": "Inn",
+      "Tags": ["beachfront", "bike rentals", "free breakfast"],
+      "ParkingIncluded": true,
+      "Rating": 4.30,
+      "Address": {
+        "StreetAddress": "876 Seaside Blvd",
+        "City": "Santa Monica",
+        "StateProvince": "CA",
+        "PostalCode": "90401",
+        "Country": "USA"
+      },
+      "Rooms": [
+        {
+          "RoomId": 1,
+          "Description": "Standard Room, 1 King Bed",
+          "Image": "../Resources/Rooms/Room9.jpg",
+          "Type": "Standard Room",
+          "BaseRate": 110.99,
+          "BedOptions": "1 King Bed",
+          "SleepsCount": 2,
+          "SmokingAllowed": true,
+          "Tags": [ "wifi", "beach access" ]
+        }
+      ]
+    },
+    {
+      "HotelId": 9,
+      "Image": "../Resources/Hotels/Hotel9.jpg",
+      "HotelName": "Green Hills Eco Lodge",
+      "Description": "An eco-friendly lodge offering sustainable accommodations in a beautiful green setting.",
+      "Category": "Eco Lodge",
+      "Tags": ["nature", "eco-friendly", "hiking"],
+      "ParkingIncluded": true,
+      "Rating": 4.10,
+      "Address": {
+        "StreetAddress": "345 Green Hills Ln",
+        "City": "Portland",
+        "StateProvince": "OR",
+        "PostalCode": "97229",
+        "Country": "USA"
+      },
+      "Rooms": [
+        {
+          "RoomId": 1,
+          "Description": "Eco Room, 1 Queen Bed",
+          "Image": "../Resources/Rooms/Room10.jpg",
+          "Type": "Eco Room",
+          "BaseRate": 125.99,
+          "BedOptions": "1 Queen Bed",
+          "SleepsCount": 2,
+          "SmokingAllowed": false,
+          "Tags": [ "solar powered", "organic toiletries" ]
+        }
+      ]
+    },
+    {
+      "HotelId": 10,
+      "Image": "../Resources/Hotels/Hotel10.jpg",
+      "HotelName": "City Heights Hotel",
+      "Description": "A chic urban hotel located in the vibrant downtown area, offering contemporary amenities.",
+      "Category": "Boutique",
+      "Tags": ["rooftop bar", "city view", "gym"],
+      "ParkingIncluded": false,
+      "Rating": 4.40,
+      "Address": {
+        "StreetAddress": "789 Skyline Dr",
+        "City": "Seattle",
+        "StateProvince": "WA",
+        "PostalCode": "98101",
+        "Country": "USA"
+      },
+      "Rooms": [
+        {
+          "RoomId": 1,
+          "Description": "Deluxe Room, 1 King Bed, City View",
+          "Image": "../Resources/Rooms/Room11.jpg",
+          "Type": "Deluxe Room",
+          "BaseRate": 200.99,
+          "BedOptions": "1 King Bed",
+          "SleepsCount": 2,
+          "SmokingAllowed": false,
+          "Tags": [ "wifi", "smart TV" ]
+        }
+      ]
+    }
+  ]
+}

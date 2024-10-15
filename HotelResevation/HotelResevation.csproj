@@ -1,0 +1,151 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\HotelData.json" />
+    <None Remove="Resources\Hotels\Hotel1.jpg" />
+    <None Remove="Resources\Hotels\Hotel10.jpg" />
+    <None Remove="Resources\Hotels\Hotel2.jpg" />
+    <None Remove="Resources\Hotels\Hotel3.jpg" />
+    <None Remove="Resources\Hotels\Hotel4.jpg" />
+    <None Remove="Resources\Hotels\Hotel5.jpg" />
+    <None Remove="Resources\Hotels\Hotel6.jpg" />
+    <None Remove="Resources\Hotels\Hotel7.jpg" />
+    <None Remove="Resources\Hotels\Hotel8.jpg" />
+    <None Remove="Resources\Hotels\Hotel9.jpg" />
+    <None Remove="Resources\Rooms\Room1.jpg" />
+    <None Remove="Resources\Rooms\Room10.jpg" />
+    <None Remove="Resources\Rooms\Room11.jpg" />
+    <None Remove="Resources\Rooms\Room12.jpg" />
+    <None Remove="Resources\Rooms\Room13.jpg" />
+    <None Remove="Resources\Rooms\Room14.jpg" />
+    <None Remove="Resources\Rooms\Room15.jpg" />
+    <None Remove="Resources\Rooms\Room16.jpg" />
+    <None Remove="Resources\Rooms\Room17.jpg" />
+    <None Remove="Resources\Rooms\Room18.jpg" />
+    <None Remove="Resources\Rooms\Room19.jpg" />
+    <None Remove="Resources\Rooms\Room2.jpg" />
+    <None Remove="Resources\Rooms\Room20.jpg" />
+    <None Remove="Resources\Rooms\Room3.jpg" />
+    <None Remove="Resources\Rooms\Room4.jpg" />
+    <None Remove="Resources\Rooms\Room5.jpg" />
+    <None Remove="Resources\Rooms\Room6.jpg" />
+    <None Remove="Resources\Rooms\Room7.jpg" />
+    <None Remove="Resources\Rooms\Room8.jpg" />
+    <None Remove="Resources\Rooms\Room9.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bogus" Version="35.6.1" />
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.3.2" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
+    <PackageReference Include="MpCoding.WPF.LoadingAnimations" Version="1.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Hotels\Hotel10.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Hotels\Hotel2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Hotels\Hotel3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Hotels\Hotel4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Hotels\Hotel5.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Hotels\Hotel6.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Hotels\Hotel7.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Hotels\Hotel8.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Hotels\Hotel9.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\HotelData.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Rooms\Room1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Rooms\Room10.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Rooms\Room11.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Rooms\Room12.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Rooms\Room13.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Rooms\Room14.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Rooms\Room15.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Rooms\Room16.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Rooms\Room17.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Rooms\Room18.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Rooms\Room19.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Rooms\Room2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Rooms\Room20.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Rooms\Room3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Rooms\Room4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Rooms\Room5.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Rooms\Room6.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Rooms\Room7.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Rooms\Room8.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Rooms\Room9.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Hotels\Hotel1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,135 @@
+﻿<UserControl
+    x:Class="HotelResevation.Views.RoomDetailsView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:HotelResevation.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:HotelResevation.ViewModels"
+    d:Background="White"
+    d:DataContext="{Binding RelativeSource={RelativeSource AncestorType={x:Type vm:RoomDetailsViewModel}}}"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center">
+            <TextBlock
+                HorizontalAlignment="Center"
+                FontSize="30"
+                Text="{Binding HotelName}" />
+
+            <Image Width="350" Source="{Binding ItemRoom.Image}" />
+            <TextBlock
+                HorizontalAlignment="Center"
+                FontSize="30"
+                Text="{Binding ItemRoom.Description}" />
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <StackPanel>
+                    <TextBlock
+                        Margin="0,20,0,0"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Text="Type" />
+                    <TextBlock
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Foreground="Brown"
+                        Text="{Binding ItemRoom.Type}" />
+                    <TextBlock
+                        Margin="0,20,0,0"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Text="Bed Option:" />
+                    <TextBlock
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Foreground="Brown"
+                        Text="{Binding ItemRoom.BedOptions}" />
+
+                    <TextBlock
+                        Margin="0,20,0,0"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Text="Sleep count:" />
+                    <TextBlock
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Foreground="Brown"
+                        Text="{Binding ItemRoom.SleepsCount}" />
+                </StackPanel>
+
+                <StackPanel Grid.Column="1">
+                    <TextBlock
+                        Margin="0,20,0,0"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Text="Rate:" />
+                    <TextBlock
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Foreground="Brown"
+                        Text="{Binding ItemRoom.BaseRate}" />
+
+                    <TextBlock
+                        Margin="0,20,0,0"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Text="Smoking:" />
+                    <ContentControl>
+                        <ContentControl.Resources>
+                            <DataTemplate x:Key="smoking_room">
+                                <TextBlock
+                                    FontSize="20"
+                                    FontWeight="Bold"
+                                    Foreground="Brown"
+                                    Text="Smoking Room" />
+                            </DataTemplate>
+                            <DataTemplate x:Key="not_smoking_room">
+                                <TextBlock
+                                    FontSize="20"
+                                    FontWeight="Bold"
+                                    Foreground="Brown"
+                                    Text="No Smoking" />
+                            </DataTemplate>
+                        </ContentControl.Resources>
+                        <ContentControl.Style>
+                            <Style TargetType="ContentControl">
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding ItemRoom.SmokingAllowed}" Value="True">
+                                        <Setter Property="ContentTemplate" Value="{StaticResource smoking_room}" />
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding ItemRoom.SmokingAllowed}" Value="False">
+                                        <Setter Property="ContentTemplate" Value="{StaticResource not_smoking_room}" />
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </ContentControl.Style>
+                    </ContentControl>
+
+
+                </StackPanel>
+            </Grid>
+
+            <Button
+                Width="300"
+                Height="50"
+                Margin="0,20"
+                Content="Make a resevation"
+                FontSize="25"
+                FontWeight="Bold" />
+
+            <Button
+                Margin="0,30,0,0"
+                Command="{Binding NavigationCommand}"
+                CommandParameter="RoomListView"
+                Content="Back To Room List"
+                FontSize="22"
+                FontWeight="Bold" />
+        </StackPanel>
+    </Grid>
+</UserControl>
