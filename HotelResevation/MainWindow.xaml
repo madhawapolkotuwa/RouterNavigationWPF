@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:view="clr-namespace:HotelResevation.Views"
     xmlns:vm="clr-namespace:HotelResevation.ViewModels"
-    Title="MainWindow"
+    Title="Hotel Reservation"
     Width="1280"
     Height="780"
     d:DataContext="{Binding RelativeSource={RelativeSource AncestorType={x:Type vm:MainViewModel}}}"
