@@ -2,6 +2,7 @@
 using HotelResevation.Services;
 using HotelResevation.Stores;
 using HotelResevation.ViewModels;
+using HotelResevation.ViewModels.ModalViewModels;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -15,10 +16,13 @@ namespace HotelResevation.HostBuilder
             {
 
                 services.AddSingleton<NavigationStore>();
+                services.AddSingleton<ModalNavigationStore>();
 
                 services.AddTransient<RoomListViewModel>();
                 services.AddTransient<HotelListViewModel>();
                 services.AddTransient<RoomDetailsViewModel>();
+
+                services.AddTransient<MakeAReservationModalViewModel>();
 
                 services.AddSingleton<ViewModelRouter>((s) =>
                 new ViewModelRouter(new Dictionary<string, INavigationService>
@@ -40,6 +44,12 @@ namespace HotelResevation.HostBuilder
                         new NavigationService<RoomDetailsViewModel>(
                             s.GetRequiredService<NavigationStore>(),
                             () => s.GetRequiredService<RoomDetailsViewModel>())
+                    },
+                    {
+                        "ModalMakeAReservation" ,
+                        new ModalNavigationService<MakeAReservationModalViewModel>(
+                            s.GetRequiredService<ModalNavigationStore>(),
+                            () => s.GetRequiredService<MakeAReservationModalViewModel>())
                     }
 
                 }));

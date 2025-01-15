@@ -60,7 +60,5 @@ namespace HotelResevation.ViewModels
         {
             _viewModelRouter.NavigateTo("HotelListView");
         }
-
-        
     }
 }

@@ -3,12 +3,6 @@ using CommunityToolkit.Mvvm.Input;
 using HotelResevation.Models;
 using HotelResevation.Router;
 using HotelResevation.Services;
-using HotelResevation.Stores;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HotelResevation.ViewModels
 {
@@ -51,6 +45,12 @@ namespace HotelResevation.ViewModels
         void Navigation(string view)
         {
             _viewModelRouter.NavigateTo(view);
+        }
+
+        [RelayCommand]
+        void MakeAReservation()
+        {
+            _viewModelRouter.NavigateTo("ModalMakeAReservation");
         }
     }
 }

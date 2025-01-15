@@ -4,5 +4,6 @@ namespace HotelResevation.ViewModels
 {
     public class BaseViewModel : ObservableObject
     {
+
     }
 }

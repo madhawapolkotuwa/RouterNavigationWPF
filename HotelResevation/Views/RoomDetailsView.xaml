@@ -121,6 +121,7 @@
                 Margin="0,20"
                 Content="Make a resevation"
                 FontSize="25"
+                Command="{Binding MakeAReservationCommand}"
                 FontWeight="Bold" />
 
             <Button
